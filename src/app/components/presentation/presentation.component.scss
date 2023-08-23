@@ -1,0 +1,93 @@
+.presentation-container {
+  z-index: 1;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1d6f86;
+
+  .presentation {
+    padding: 2.5rem;
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    max-width: 50.5rem;
+    h1 {
+      font-weight: bolder;
+      font-size: 3.4375rem;
+    }
+
+    span {
+      color: #cde8e2;
+      font-size: 1rem;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      .btn_header {
+        width: 7.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 1.25rem;
+        border-color: #00c5b5;
+        transition: transform 0.2s;
+
+        a {
+          color: #fff;
+          font-size: 0.9375rem;
+          text-decoration: none;
+        }
+
+        &:hover {
+          transform: scale(1.03);
+          color: #fff;
+          border-color: transparent;
+          background-color: #00c5b5;
+        }
+      }
+    }
+  }
+
+  .blobs-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .blobs {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    div:nth-child(1) {
+      animation: MoveUp 5s linear infinite;
+      position: relative;
+    }
+    div:nth-child(2) {
+      animation: MoveUp 8s linear infinite;
+      position: relative;
+    }
+    div:nth-child(3) {
+      animation: MoveUp 10s linear infinite;
+      position: relative;
+    }
+  }
+}
+
+@keyframes MoveUp {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}

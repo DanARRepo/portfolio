@@ -1,0 +1,38 @@
+.contact-container {
+  background-color: #cde8e2;
+  color: #1d6f86;
+  padding: 7rem 0;
+
+  .contact {
+    padding: 3.5rem;
+    h2 {
+      font-size: 3.125rem;
+      font-weight: bold;
+    }
+    .btn-group {
+      // display: flex;
+      // flex-direction: column;
+      gap: 20px;
+      .btn-contact {
+        padding: 0.5rem 1rem;
+        border-radius: 1.25rem;
+        background-color: rgba(80, 80, 80, 0.5098039216);
+        border-color: transparent;
+        transition: transform 0.2s;
+
+        a {
+          color: #fff;
+          font-size: 0.9375rem;
+          text-decoration: none;
+        }
+
+        &:hover {
+          transform: scale(1.03);
+          color: #fff;
+          border-color: transparent;
+          background-color: #00c5b5;
+        }
+      }
+    }
+  }
+}

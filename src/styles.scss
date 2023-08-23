@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+// fonts
+@font-face {
+    font-family: 'Open-sans';
+    src: local("Open-sans"), url(./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Open-sans-italic';
+    src: local("Open-sans-italic"), url(./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: local("Quicksand"), url(./assets/fonts/Quicksand-VariableFont_wght.ttf) format("truetype");
+}

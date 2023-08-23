@@ -1,0 +1,33 @@
+<div class="skills-container p-2">
+  <div data-aos="fade-down"
+    data-aos-delay="50"
+    data-aos-duration="900"
+    data-aos-easing="ease-in-out"
+    data-aos-once="false"
+    data-aos-mirror="true">
+    <h2>Habilidades</h2>
+  </div>
+  <div class="row skills-content d-flex justify-content-center">
+    <ng-container *ngFor="let item of skills">
+      <div class="col-lg-4 d-flex justify-content-center"
+        data-aos="zoom-in-up"
+        data-aos-delay="50"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+        data-aos-mirror="true">
+        <div class="card-container mb-5">
+          <div class="card">
+            <div class="img-content">
+              <img [src]="item.skillImage" alt="tool skill logo">
+            </div>
+            <div class="level-contetn mt-3">
+              <span class="skill-name"><strong>{{ item.skillName }}</strong></span>
+              <!-- <span><strong>Nivel:</strong> {{ item.skillLevel }}</span> -->
+            </div>
+          </div>
+          </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
